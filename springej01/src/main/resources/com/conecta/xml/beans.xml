@@ -24,7 +24,7 @@
 <!-- 			<property name="apodo" value="Pepito"></property> -->
 <!-- 		</bean> -->
 		
-		<bean id="persona" class="com.conecta.beans.Persona">
+		<bean id="persona" class="com.conecta.beans.Persona" name="personaBean2">
 			<property name="pais">
 				<bean id="pais" class="com.conecta.beans.Pais">
 						<property name="nombre" value="Perú"></property>
@@ -46,7 +46,7 @@
 <!-- 		</bean> -->
 		
 		
-		
+		<alias name ="persona" alias="personaBean" />
 		
 		
 </beans>
