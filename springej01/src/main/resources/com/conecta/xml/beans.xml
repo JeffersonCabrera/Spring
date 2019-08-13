@@ -17,20 +17,36 @@
 <!-- 			<constructor-arg  index="1" value="Juan Martines"></constructor-arg>  -->
 <!-- 		</bean> -->
 		
+<!-- 		<bean id="persona" class="com.conecta.beans.Persona"> -->
+<!-- 			<property name="pais" ref="pais"></property> -->
+<!-- 			<property name="id" value="1"></property> -->
+<!-- 			<property name="nombre" value="Juan"></property> -->
+<!-- 			<property name="apodo" value="Pepito"></property> -->
+<!-- 		</bean> -->
+		
 		<bean id="persona" class="com.conecta.beans.Persona">
-			<property name="pais" ref="pais"></property>
+			<property name="pais">
+				<bean id="pais" class="com.conecta.beans.Pais">
+						<property name="nombre" value="Perú"></property>
+						<property name="cuidad">
+							<bean id="cuidad" class="com.conecta.beans.Cuidad">
+								<property name="nombre" value="Lima"></property>
+							</bean>
+						</property>
+				</bean>
+			</property>
 			<property name="id" value="1"></property>
 			<property name="nombre" value="Juan"></property>
 			<property name="apodo" value="Pepito"></property>
 		</bean>
 		
-		<bean id="pais" class="com.conecta.beans.Pais">
-			<property name="nombre" value="Perú"></property>
-			<property name="cuidad" ref="cuidad"></property>
-		</bean>
+<!-- 		<bean id="pais" class="com.conecta.beans.Pais"> -->
+<!-- 			<property name="nombre" value="Perú"></property> -->
+<!-- 			<property name="cuidad" ref="cuidad"></property> -->
+<!-- 		</bean> -->
 		
-		<bean id="cuidad" class="com.conecta.beans.Cuidad">
-			<property name="nombre" value="Lima"></property>
-		</bean>
+		
+		
+		
 		
 </beans>
