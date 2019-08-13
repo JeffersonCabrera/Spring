@@ -5,8 +5,8 @@ import java.util.List;
 public class Pais {
 
 	private String nombre;
-	private Cuidad ciudad;
-	private List<Cuidad> ciudades;
+//	private Ciudad ciudad;
+//	private List<Ciudad> ciudades;
 
 	public String getNombre() {
 		return nombre;
@@ -16,21 +16,21 @@ public class Pais {
 		this.nombre = nombre;
 	}
 
-	public Cuidad getCuidad() {
-		return ciudad;
-	}
+//	public Ciudad getCuidad() {
+//		return ciudad;
+//	}
+//
+//	public void setCuidad(Ciudad cuidad) {
+//		this.ciudad = cuidad;
+//	}
 
-	public void setCuidad(Cuidad cuidad) {
-		this.ciudad = cuidad;
-	}
-
-	public List<Cuidad> getCiudades() {
-		return ciudades;
-	}
-
-	public void setCiudades(List<Cuidad> ciudades) {
-		this.ciudades = ciudades;
-	}
+//	public List<Ciudad> getCiudades() {
+//		return ciudades;
+//	}
+//
+//	public void setCiudades(List<Ciudad> ciudades) {
+//		this.ciudades = ciudades;
+//	}
  
 	
 	

@@ -1,6 +1,6 @@
 package com.conecta.beans;
 
-public class Cuidad {
+public class Ciudad {
 	
 	private String nombre;
 
