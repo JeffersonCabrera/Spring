@@ -31,7 +31,7 @@ public class App {
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("com/conecta/xml/beans.xml");
 		Persona per = (Persona) appContext.getBean("persona");
 		
-		System.out.println(per.getId() + " " + per.getNombre() + " " + per.getApodo());
+		System.out.println(per.getId() + " " + per.getNombre() + " " + per.getApodo() + " "+ per.getPais().getNombre() + " " + per.getPais().getCuidad().getNombre());
 		
 		((ConfigurableApplicationContext) appContext).close();
 
