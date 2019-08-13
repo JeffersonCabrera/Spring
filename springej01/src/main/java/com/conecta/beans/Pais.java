@@ -1,9 +1,12 @@
 package com.conecta.beans;
 
+import java.util.List;
+
 public class Pais {
 
 	private String nombre;
-	private Cuidad cuidad;
+	private Cuidad ciudad;
+	private List<Cuidad> ciudades;
 
 	public String getNombre() {
 		return nombre;
@@ -14,11 +17,21 @@ public class Pais {
 	}
 
 	public Cuidad getCuidad() {
-		return cuidad;
+		return ciudad;
 	}
 
 	public void setCuidad(Cuidad cuidad) {
-		this.cuidad = cuidad;
+		this.ciudad = cuidad;
 	}
+
+	public List<Cuidad> getCiudades() {
+		return ciudades;
+	}
+
+	public void setCiudades(List<Cuidad> ciudades) {
+		this.ciudades = ciudades;
+	}
+ 
+	
 	
 }
