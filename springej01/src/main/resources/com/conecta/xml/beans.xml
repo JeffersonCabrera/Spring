@@ -90,7 +90,7 @@
 <!-- 		</bean> -->
 		
 <!-- 		<bean id="persona" class="com.conecta.beans.Persona" autowire="byName" scope="prototype"> -->
-		<bean id="persona" class="com.conecta.beans.Persona" autowire="byName" scope="singleton"> <!-- por defecto	 -->
+			<bean id="persona" class="com.conecta.beans.Persona" autowire="byName" scope="singleton" lazy-init="true"> <!-- por defecto scope="singleton" 	 -->
 <!-- 		<bean id="persona" class="com.conecta.beans.Persona" autowire="constructor"> -->
 <!-- 		<bean id="persona" class="com.conecta.beans.Persona" autowire="byType"> -->
 <!-- 		<bean id="persona" class="com.conecta.beans.Persona" autowire="byName"> -->

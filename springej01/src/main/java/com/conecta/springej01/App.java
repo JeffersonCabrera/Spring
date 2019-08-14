@@ -36,6 +36,7 @@ public class App {
 		per.setId(1);
 		per.setNombre("Jefferson");
 		per.setApodo("Jeff");
+		
 //		System.out.println(per.getId() + " " + per.getNombre() + " " + per.getApodo() + " "+ per.getPais().getNombre());
 		
 //		String nombreCuidades = "";
