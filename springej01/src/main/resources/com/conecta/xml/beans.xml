@@ -106,21 +106,30 @@
 	<!-- </bean> -->
 
 	<!-- <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean> -->
-	<bean class="com.conecta.beans.JeffersonBeanPostProcessor"></bean>
-	
-	<bean id="persona" class="com.conecta.beans.Persona"
-		autowire="byName">
-	</bean>
+<!-- 	<bean class="com.conecta.beans.JeffersonBeanPostProcessor"></bean> -->
 
-	<bean id="pais" class="com.conecta.beans.Pais">
-		<property name="nombre" value="Perú"></property>
-	</bean>
+<!-- 	<bean id="persona" class="com.conecta.beans.Persona" -->
+<!-- 		autowire="byName"> -->
+<!-- 	</bean> -->
 
-	<bean id="ciudad" class="com.conecta.beans.Ciudad">
-		<property name="nombre" value="Lima"></property>
-	</bean>
+<!-- 	<bean id="pais" class="com.conecta.beans.Pais"> -->
+<!-- 		<property name="nombre" value="Perú"></property> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="ciudad" class="com.conecta.beans.Ciudad"> -->
+<!-- 		<property name="nombre" value="Lima"></property> -->
+<!-- 	</bean> -->
 
 	<!-- <alias name ="persona" alias="personaBean" /> -->
 
-
+   <bean id="messi" class="com.conecta.beans.Jugador">
+   		<property name="numero" value="10"></property>
+   		<property name="nombre" value="Lionel Messi"></property>
+   		<property name="equipo"  ref="barcelona"></property>
+   </bean>
+   
+   <bean id="barcelona" class="com.conecta.beans.Barcelona"></bean>
+   
+   <bean id="juventus" class="com.conecta.beans.Juventus"></bean>
+   
 </beans>

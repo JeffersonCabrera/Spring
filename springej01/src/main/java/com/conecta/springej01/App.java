@@ -7,9 +7,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.conecta.beans.AppConfig;
 import com.conecta.beans.AppConfig2;
+import com.conecta.beans.Barcelona;
 import com.conecta.beans.Ciudad;
+import com.conecta.beans.Jugador;
 import com.conecta.beans.Mundo;
 import com.conecta.beans.Persona;
+import com.conecta.interfaces.IEquipo;
 
 public class App {
 
@@ -30,13 +33,19 @@ public class App {
 //		((ConfigurableApplicationContext) appContext).close();
 
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("com/conecta/xml/beans.xml");
-		Persona per = (Persona) appContext.getBean("persona");
-		Ciudad cui =(Ciudad) appContext.getBean("ciudad");
-//		Persona per2 = (Persona) appContext.getBean("persona");
+//		Jugador ju = (Jugador) appContext.getBean("messi");
+//		System.out.println(ju.getNombre() + " - " + ju.getEquipo().mostrar());
 		
-		per.setId(1);
-		per.setNombre("Jefferson");
-		per.setApodo("Jeff");
+		IEquipo bar = (IEquipo) appContext.getBean("barcelona");
+		
+		System.out.println(bar.mostrar());
+		
+//		Ciudad cui =(Ciudad) appContext.getBean("ciudad");
+////		Persona per2 = (Persona) appContext.getBean("persona");
+//		
+//		per.setId(1);
+//		per.setNombre("Jefferson");
+//		per.setApodo("Jeff");
 		
 //		System.out.println(per.getId() + " " + per.getNombre() + " " + per.getApodo() + " "+ per.getPais().getNombre());
 		
@@ -51,8 +60,8 @@ public class App {
 //		System.out.println(per2.getId() + " " + per2.getNombre() + " " + per2.getApodo() + " "+ per2.getPais().getNombre() + " " + per2.getCiudad().getNombre());
 //		System.out.println(per);
 //		System.out.println(per2);
-		System.out.println(per.getApodo());
-		System.out.println(cui.getNombre());
+//		System.out.println(per.getApodo());
+//		System.out.println(cui.getNombre());
 				
 		((ConfigurableApplicationContext) appContext).close();
 
