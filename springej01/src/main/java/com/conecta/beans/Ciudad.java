@@ -1,5 +1,8 @@
 package com.conecta.beans;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class Ciudad {
 
 	private String nombre;
@@ -12,10 +15,11 @@ public class Ciudad {
 		this.nombre = nombre;
 	}
 
+	@PostConstruct
 	private void initBean() {
 		System.out.println("Antes de inicializar el bean");
 	}
-
+	@PreDestroy
 	private void destroyBean() {
 		System.out.println("Bean a punto de ser destruido");
 	}
