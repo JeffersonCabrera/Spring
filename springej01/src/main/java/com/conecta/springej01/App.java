@@ -16,6 +16,9 @@ import com.conecta.interfaces.IEquipo;
 
 public class App {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 //		ApplicationContext appContext = new ClassPathXmlApplicationContext("com/conecta/xml/beans.xml");

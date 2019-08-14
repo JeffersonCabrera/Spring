@@ -127,19 +127,19 @@
 <!-- 		class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean> -->
 <!-- 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"	></bean> -->
 	
-	<context:annotation-config/>
-	
-	<bean id="messi" class="com.conecta.beans.Jugador">
-		<property name="numero" value="10"></property>
-		<property name="nombre" value="Lionel Messi"></property>
+<!-- 	<context:annotation-config/> -->
+	<context:component-scan base-package="com.conecta" />
+<!-- 	<bean id="messi" class="com.conecta.beans.Jugador"> -->
+<!-- 		<property name="numero" value="10"></property> -->
+<!-- 		<property name="nombre" value="Lionel Messi"></property> -->
 <!-- 		<property name="equipo" ref="barcelona" ></property> -->
-	</bean>
+<!-- 	</bean> -->
 
-	<bean id="barcelona" class="com.conecta.beans.Barcelona">
-		<qualifier value="barcelonaQualifier"></qualifier>
-	</bean>
+<!-- 	<bean id="barcelona" class="com.conecta.beans.Barcelona"> -->
+<!-- 		<qualifier value="barcelonaQualifier"></qualifier> -->
+<!-- 	</bean> -->
 
-	<bean id="juventus" class="com.conecta.beans.Juventus"> 
-	</bean> 
+<!-- 	<bean id="juventus" class="com.conecta.beans.Juventus">  -->
+<!-- 	</bean>  -->
 
 </beans>
