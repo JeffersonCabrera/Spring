@@ -33,12 +33,12 @@ public class App {
 //		((ConfigurableApplicationContext) appContext).close();
 
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("com/conecta/xml/beans.xml");
-//		Jugador ju = (Jugador) appContext.getBean("messi");
-//		System.out.println(ju.getNombre() + " - " + ju.getEquipo().mostrar());
+		Jugador ju = (Jugador) appContext.getBean("messi");
+		System.out.println(ju.getNombre() + " - " + ju.getEquipo().mostrar());
 		
-		IEquipo bar = (IEquipo) appContext.getBean("barcelona");
-		
-		System.out.println(bar.mostrar());
+//		IEquipo bar = (IEquipo) appContext.getBean("barcelona");
+//		
+//		System.out.println(bar.mostrar());
 		
 //		Ciudad cui =(Ciudad) appContext.getBean("ciudad");
 ////		Persona per2 = (Persona) appContext.getBean("persona");

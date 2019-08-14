@@ -1,11 +1,14 @@
 package com.conecta.beans;
 
+import org.springframework.beans.factory.annotation.Required;
+
 import com.conecta.interfaces.IEquipo;
 
 public class Jugador {
 
 	private int numero;
 	private String nombre;
+	
 	private IEquipo equipo;
 
 	public int getNumero() {
@@ -20,6 +23,7 @@ public class Jugador {
 		return nombre;
 	}
 
+	@Required
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -28,6 +32,7 @@ public class Jugador {
 		return equipo;
 	}
 
+	@Required
 	public void setEquipo(IEquipo equipo) {
 		this.equipo = equipo;
 	}
