@@ -106,7 +106,7 @@
 	<!-- <property name="apodo" value="Pepito"></property> -->
 	<!-- </bean> -->
 
-	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+<!-- 	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean> -->
 	
 	<bean id="persona" class="com.conecta.beans.Persona"
 		autowire="byName">
