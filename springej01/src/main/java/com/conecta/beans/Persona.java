@@ -63,11 +63,11 @@ public class Persona  implements InitializingBean, DisposableBean{
 		this.apodo = apodo;
 	}
 	public void afterPropertiesSet() throws Exception { 
-		System.out.println("Antes de inicializar el bean");
+		System.out.println("AFTER PERSONA");
 	}
 
 	public void destroy() throws Exception {
-		System.out.println("Bean a punto de ser destruido");
+		System.out.println("DESTROY PERSONA");
 	}
 	
 

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-	>
-<!-- 	default-init-method="initBean" default-destroy-method="destroyBean"> -->
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- default-init-method="initBean" default-destroy-method="destroyBean"> -->
 
 	<!-- <bean id="mundo" class="com.conecta.beans.Mundo"> -->
 	<!-- <property name="saludo" value="Hola Conecta"></property> -->
@@ -106,7 +105,8 @@
 	<!-- <property name="apodo" value="Pepito"></property> -->
 	<!-- </bean> -->
 
-<!-- 	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean> -->
+	<!-- <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean> -->
+	<bean class="com.conecta.beans.JeffersonBeanPostProcessor"></bean>
 	
 	<bean id="persona" class="com.conecta.beans.Persona"
 		autowire="byName">
@@ -119,7 +119,7 @@
 	<bean id="ciudad" class="com.conecta.beans.Ciudad">
 		<property name="nombre" value="Lima"></property>
 	</bean>
- 
+
 	<!-- <alias name ="persona" alias="personaBean" /> -->
 
 
