@@ -1,7 +1,7 @@
 package com.conecta.beans;
 
 public class Ciudad {
-	
+
 	private String nombre;
 
 	public String getNombre() {
@@ -10,7 +10,14 @@ public class Ciudad {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
-	} 
+	}
 
-	
+	private void initBean() {
+		System.out.println("Antes de inicializar el bean");
+	}
+
+	private void destroyBean() {
+		System.out.println("Bean a punto de ser destruido");
+	}
+
 }
