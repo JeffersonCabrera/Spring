@@ -1,9 +1,8 @@
-package com.conecta.dao;
+package com.conecta.service;
 
 import com.conecta.beans.Jugador;
 
-public interface DAOJugador {
+public interface ServiceJugador {
 
 	public void registrar(Jugador jugador) throws Exception;
-	
 }

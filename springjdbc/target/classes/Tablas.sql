@@ -1,4 +1,5 @@
-use springjdbc
+--use springjdbc
+use CNTSECDESA
 go
 
 create table marca(
