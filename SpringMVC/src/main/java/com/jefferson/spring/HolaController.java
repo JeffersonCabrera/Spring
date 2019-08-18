@@ -9,8 +9,11 @@ public class HolaController {
 	
 	@RequestMapping("irHola")
 	public ModelAndView redireccion() {
-		ModelAndView mv = new ModelAndView();
-	    mv.setViewName("hola");
+//		ModelAndView mv = new ModelAndView();
+//	    mv.setViewName("hola");
+//	    mv.addObject("mensaje","Hola soy mensaje desde un controller");
+		ModelAndView mv = new ModelAndView("hola","mensaje","Hola soy mensaje desde controller");
+		
 		return mv;
 	}
 

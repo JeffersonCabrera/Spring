@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hola soy llamada desde un controler.
+	${mensaje} 
 </body>
 </html>
