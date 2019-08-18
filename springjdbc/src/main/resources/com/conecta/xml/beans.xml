@@ -7,12 +7,20 @@
 
 	<context:component-scan base-package="com.conecta"></context:component-scan>
 	
+<!-- 	<bean id="dataSource" -->
+<!-- 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">  -->
+<!-- 		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" /> -->
+<!-- 		<property name="url" value="jdbc:sqlserver://CNTSRV17:1433;databaseName=CNTSECDesa" /> -->
+<!-- 		<property name="username" value="Usr_Cob2" /> -->
+<!-- 		<property name="password" value="concob2$2014" /> -->
+<!-- 	</bean> -->
+	<context:property-placeholder location="classpath:valores.properties"/>
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
-		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
-		<property name="url" value="jdbc:sqlserver://CNTSRV17:1433;databaseName=CNTSECDesa" />
-		<property name="username" value="Usr_Cob2" />
-		<property name="password" value="concob2$2014" />
+		<property name="driverClassName" value="${driver}" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${usuario}" />
+		<property name="password" value="${clave}" />
 	</bean>
 	
 	<bean id="marca3" class="com.conecta.beans.Marca">
@@ -28,7 +36,14 @@
 	<bean id="camiseta1" class="com.conecta.beans.Camiseta">
 		<property name="id" value="1"></property>
 		<property name="numero" value="10"></property>
-		<property name="marca"></property>
+		<property name="marca" ref="marca3" ></property>
+	</bean>
+	
+	<bean id="jugador1" class="com.conecta.beans.Jugador">
+		<property name="id" value="2"></property>
+		<property name="nombre" value="Juan"></property>
+		<property name="equipo" ref="equipo1"></property>
+		<property name="camiseta" ref="camiseta1"></property>
 	</bean>
 
 </beans>
